@@ -6,7 +6,7 @@ $req_arr = json_decode($req, true);
 //=======================================================================================================
 // Create new webhook in your Discord channel settings and copy&paste URL
 //=======================================================================================================
-$url = "https://discord.com/api/webhooks/885531110405181462/JZfdTXSETZFgVSSx3aqNMIULDO9nTXoIqjuB844pOen75OEnr5Zwhp4NaZDMsPFHzcLc";
+$url = WEBHOOK_URL;
 
 $curl = curl_init($url);
 curl_setopt($curl, CURLOPT_URL, $url);
